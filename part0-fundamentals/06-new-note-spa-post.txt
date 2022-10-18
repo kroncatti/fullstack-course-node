@@ -1,0 +1,16 @@
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over browser:
+Server DO NOT ask for redirect
+end note
+note over server:
+We send a json to the server
+as the payload containing two 
+elements: the note, and the timestamp
+end note
+
+server-->browser: Response: 201 Accepted
+
+note right of browser:
+We don't need to ask for the redirect
+Instead, the page is dinamically updated
+end note

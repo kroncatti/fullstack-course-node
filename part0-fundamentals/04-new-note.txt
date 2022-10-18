@@ -1,8 +1,13 @@
 browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
 note over browser:
 Server redirect: Server asking 
-the browser to perform a new GET
+the browser to perform a new GET after POST
+as traditionals web sites work
 end note
+note over server:
+Server executes Javascript code
+end note
+
 server-->browser: Response: 302 Found 
 browser-> server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
 server-->browser: HTML-code
